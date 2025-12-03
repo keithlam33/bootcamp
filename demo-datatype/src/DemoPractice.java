@@ -9,6 +9,7 @@ public class DemoPractice {
       short s2 = 2700;
       System.out.println(s1+s2);// short+short=short
       System.out.println(b1+s2);// byte + short = int
+      // boolean isXxxx = true/false
       // assign int into long, ok
       // assign long into int, can't
       int i1 = 8;
@@ -32,5 +33,14 @@ public class DemoPractice {
       long l5 = i5 + 200_000_000L; // right to left, right: int + long = long
       // left: define a long variable
       System.out.println(l5);
+
+      // ASCII 
+      char c5 = 'K';
+      int i6 = c5;
+      System.out.println(i6); // result 75
+      //ASCII with overflow
+      int i7 = 65611; 
+      char c6 = (char)i7;
+      System.out.println(c6); // ascii 75 = k, 65535+75 =65610, overflow+1= 65611
   }
 }
