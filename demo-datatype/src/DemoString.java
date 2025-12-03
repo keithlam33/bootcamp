@@ -40,7 +40,7 @@ public class DemoString {
     System.out.println(s.equals("Goodbye"));// capital false
     System.out.println(s.equalsIgnoreCase("Goodbye"));// true
 
-    // 4. contains, for loop(slow)
+    // 4. contains, for loop(slow), boolean
     System.out.println(s.contains("oo"));// true
     System.out.println(s.contains("o"));// true, one word
     System.out.println(s.contains("oo "));// false; with space
@@ -66,7 +66,7 @@ public class DemoString {
 
     System.out.println(s.replace('g', 'h'));// hoodbye, replace char g
 
-    // 8. startsWith()
+    // 8. startsWith(), return boolean
     System.out.println(s.startsWith("go"));// true
     System.out.println(s.startsWith("db"));// false
 
@@ -106,6 +106,7 @@ public class DemoString {
      System.out.println(" Java Python.  ".trim().length());// 12
      // trim return string, thus can continue use length
      // length return int, thus end
+     System.out.println(" Java Python.  ".length());// 15
 
 
   }
