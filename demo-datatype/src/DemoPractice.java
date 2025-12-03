@@ -14,5 +14,23 @@ public class DemoPractice {
       int i1 = 8;
       System.out.println(i1+ 5.5);// int + double = double
 
+      // assign int into char, not ok
+      // int i2 = 70;
+      // char c2 = i2;
+      // System.out.println(c2);
+      int i3 = 70;
+      char c3 = (char)i3; // assign int into char with consent
+      System.out.println(c3);
+
+      // assign char into int
+      char c4 = 'g';
+      int i4 = c4;
+      System.out.println(i4);
+
+      // overflow int 2_200_000_000
+      int i5 = 2_100_000_000;
+      long l5 = i5 + 200_000_000L; // right to left, right: int + long = long
+      // left: define a long variable
+      System.out.println(l5);
   }
 }
