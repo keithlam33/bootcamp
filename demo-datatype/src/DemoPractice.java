@@ -1,5 +1,6 @@
 public class DemoPractice {
   public static void main(String[] args) {
+    
     // byte 256 -128to 127
       byte b1 = 10; 
       byte b2 = 116;

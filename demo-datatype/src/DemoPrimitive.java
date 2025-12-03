@@ -70,6 +70,9 @@ public class DemoPrimitive {
     j = 10; 
     System.out.println(j);
 
+    // char c13 =''; not ok
+    char c14 = ' '; // ok
+    // char c15 = 'ab' not ok
 
 
 
