@@ -74,6 +74,7 @@ public class DemoLoop {
         total += i;
       } System.out.println(total);
       
+      
       // the number of values between 1-100, which is divided by 6
       int count =0;
       for (int i =1; i<=100; i++) { //if i =0, 1 extra time %6=0
