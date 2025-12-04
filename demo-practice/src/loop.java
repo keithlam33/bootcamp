@@ -1,6 +1,6 @@
 public class loop {
   public static void main(String[] args) {
-    // print 10 loop
+    // print 10 "loop"
     for(int i = 0; i< 10; i++){
       System.out.println("loop");
       // steps: i =0 <10, do the action then i+1, repeat
