@@ -1,4 +1,4 @@
-public class firstweekpractice {
+public class stringif {
   public static void main(String[] args) {
     // week 1 03/12 for loop, string
       
