@@ -239,12 +239,34 @@ public class DemoLoop2 {
           System.out.println("Not Found");
         }
 
-        // prime numbers between 1-50
-        int i11 =2;
-        int i12 =2;
-         // i11<i12, i12%i11 ==0, i12 <=50
+        int i13 = -1;
+        for(int i =0; i <s10.length(); i++ ) {
+            if(s10.charAt(i) == 'X') {
+                i13 = i;
+                break;
+            }
+        }System.out.println(i13);
 
-        // check if n10 is the prime
+        // check if the number is a prime or not
+    int number = 0; //true
+    boolean isPrime= true;
+    if(number>=2) { 
+     for(int i=2; i< number; i++) { 
+    if (number %i==0) {
+        isPrime = false;
+        break;
+        }
+      }     
+    }else {
+  isPrime = false;
+      }
+        if (isPrime) {
+          System.out.println("the number " + number +" is a prime.");
+    } else {
+        System.out.println("the number " + number + " is not a prime");
+      }
+
+
         
 
         // for(i for(j ) )i and j refers to 2 different things
@@ -255,11 +277,23 @@ public class DemoLoop2 {
           }
         }
         int k=4;
-        for(int i=0; i<3; i++){// row 
-          for(int j=0; j<k; j++) { // print star 
+        for(int i=0; i<k; i++){// row 
+          for(int j=0; j<i+1; j++) { // print star 
             
+            System.out.print("*");
           }
+          System.out.println();//next row
         }
+        
+        //   *
+        //  ***
+        // *****
+        //int k1 = 3;
+        //or(int i=0; i<k; i++) {
+          //for(int j=0; j<i) {
+
+          //}
+        //}
           
         
         
