@@ -81,8 +81,8 @@ public class DemoArray2 {
       //x, 23,56,97,100, done here
       // it's basic method
       for( int i=0; i<scores.length-1 ; i++) {// run how many round
-        for(int j=0; j<scores.length-1-i; j++) {  // procedure of comparison 
-        // -i because the bigger no.is being pushed to right
+        for(int j=0; j<scores.length-i-1; j++) {  // procedure of comparison 
+        // -i 這一輪只要比到『還沒排好的最後位置』就夠了，不用每次都比到最尾巴
         if (scores[j] > scores[j+1]) {
             backup = scores[j];
             scores[j]= scores[j+1];

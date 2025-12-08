@@ -88,6 +88,7 @@ public class DemoLoop {
       String result = "";
       for(int i =1; i <= 100; i++) {
           result +=(char)i; // string + any type of value = string
+          // int to char value, downgrading i to char
 
       }System.out.println(result);
 

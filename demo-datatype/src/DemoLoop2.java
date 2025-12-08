@@ -125,7 +125,7 @@ public class DemoLoop2 {
   String s2 = "";
 
   for(int i=0; i<s1.length(); i++) {
-     if (s1.charAt(i)>= '0' && s1.charAt(i)<= '9')
+     if (s1.charAt(i)>= '0' && s1.charAt(i)<= '9')// ' '
       {
         s2 += s1.charAt(i);
       }
@@ -161,6 +161,8 @@ public class DemoLoop2 {
       if (i%2 ==0) {
         System.out.println("hello");
         continue;// goes to modifier (i++)
+        // 提早離開
+        // break 多啲用
       }
       System.out.println("goodbye");
      }
@@ -185,6 +187,14 @@ public class DemoLoop2 {
       largestNum +=7; //不然就一直加7
      }
      System.out.println(largestNum);
+     // for vs while
+     // 如果決定到loop 行幾多次 -> for loop 
+     // 如string length 
+     //int o=0;  while (0<10){sysout"hello; o++} = for loop, but flexible on modifier 0++
+     // for(xxx){ normally we dont use additional modifier (i++) in for loop content}
+     // 習慣兩種都用depends on 情況
+
+
 
      // 
      String currentTime = "23:42:00";
@@ -247,25 +257,7 @@ public class DemoLoop2 {
             }
         }System.out.println(i13);
 
-        // check if the number is a prime or not
-    int number = 0; //true
-    boolean isPrime= true;
-    if(number>=2) { 
-     for(int i=2; i< number; i++) { 
-    if (number %i==0) {
-        isPrime = false;
-        break;
-        }
-      }     
-    }else {
-  isPrime = false;
-      }
-        if (isPrime) {
-          System.out.println("the number " + number +" is a prime.");
-    } else {
-        System.out.println("the number " + number + " is not a prime");
-      }
-
+       
 
         
 
@@ -288,12 +280,19 @@ public class DemoLoop2 {
         //   *
         //  ***
         // *****
-        //int k1 = 3;
-        //or(int i=0; i<k; i++) {
-          //for(int j=0; j<i) {
-
-          //}
-        //}
+        
+    int k10 =4;
+    
+    for(int i =0; i <k10; i++) {// next row
+      for(int l =0; l <k10-i; l++){
+          System.out.print(" ");
+      }
+      for(int j=0; j<2*i-1; j++){ // print *
+          
+          System.out.print("*");
+      
+        }System.out.println();
+    }
           
         
         

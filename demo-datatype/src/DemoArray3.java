@@ -14,7 +14,7 @@ public class DemoArray3 {
     // loop print all even numbers
 
     numbers =new int[] {23, 44,67,88,91,12};
-    int even = 0;
+    
     for( int i=0; i<numbers.length; i++) { // every round
         if(numbers[i] %2 == 0) {
           
@@ -54,7 +54,7 @@ public class DemoArray3 {
             }
         }
      }min = numbers[0];
-     max = numbers[numbers.length-1];
+     max = numbers[numbers.length-1]; // length =13, index -1 = 12
      median = numbers[numbers.length/2] ;
      System.out.println("The smallest number is "+ min);
      System.out.println("The biggest number is "+ max);
@@ -89,8 +89,8 @@ public class DemoArray3 {
               isUser = true;
               if (passwordInput.equals(passwords[i])) {
                 isPass = true;
-                continue;
-              }
+                
+              }break;
           } //break;// if{} else break;
         }
       
