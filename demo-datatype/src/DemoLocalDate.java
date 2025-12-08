@@ -60,6 +60,7 @@ public class DemoLocalDate {
     // Date d1= new Date(); used 30 years ago
 
 
+    // wrong demo
     LocalDate ld2 = LocalDate.of(2024, 10, 31);
     LocalDate ld3 = LocalDate.of(2024, 10, 31);
     System.out.println(ld2 == ld3);// false 

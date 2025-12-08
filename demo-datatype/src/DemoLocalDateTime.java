@@ -30,12 +30,11 @@ public class DemoLocalDateTime {
     ZonedDateTime newYorkTime = ZonedDateTime.of(currentTime, newYork );
     System.out.println(newYorkTime);
 
-    // newYorkTime( zonedatetime) -> localdatetime
-    LocalDateTime hongKongLocalDateTime = newYorkTime.withZoneSameInstant(ZoneId.of("Asia/Hong_Kong")).toLocalDateTime();
-    System.out.println(hongKongLocalDateTime);
-
+   // newYorkTime (ZonedDateTime) -> LocalDateTime
     ZoneId hongKong = ZoneId.of("Asia/Hong_Kong");
-    // not done
+
+    LocalDateTime hongKongLocalDateTime = newYorkZonedTime.withZoneSameInstant(hongKong).toLocalDateTime();
+    System.out.println(hongKongLocalDateTime); // 2026-01-01T12:59:59
 
 
     System.out.println(LocalDateTime.now());// current time
