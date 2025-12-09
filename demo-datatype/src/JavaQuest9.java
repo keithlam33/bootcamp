@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class JavaQuest9 {
@@ -29,15 +30,15 @@ public class JavaQuest9 {
 
   // Program the number of days that the month of a year has.
 
-  
 
-    Scanner scanner = new Scanner(System.in);
 
-    int number_Of_DaysInMonth = 0;
+    Scanner scanner = new Scanner(System.in);// create scanner
+
+    int number_Of_DaysInMonth = 0;// declare variable
     String monthOfName = "Unknown";
 
-    System.out.print("Input a month number: ");
-    int month = scanner.nextInt(); // assume 1 - 12
+    System.out.print("Input a month number: ");// instruction before 
+    int month = scanner.nextInt(); // assume 1 - 12 next  
 
     System.out.print("Input a year: ");
     int year = scanner.nextInt(); // > 0

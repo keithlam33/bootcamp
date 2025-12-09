@@ -11,21 +11,20 @@ public class DemoBingo {
     // 1 compare userinput to the random number
     // 2 if same, end game
     // 3 if not same, update the range
-    //
+    // 
     // loop 
     
     int bingo = new Random(). nextInt(100)+1;
-    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);  // java usually use in processing, not collect inputs
     
     
     int userInput= -1;// 
     int min =1;
     int max= 100;
-    boolean isUserA = true;
-      String  userNow = "";
+    
     while(userInput != bingo) {
-      userNow = isUserA ? "User A": "User B";
-      System.out.println(userNow + ", Please input a number between" + min + " to "+ max+ ":");
+      
+      System.out.println( "Please input a number between" + min + " to "+ max+ ":");
       // rule under loop because it appears every round
       userInput= scanner.nextInt();
 
@@ -33,18 +32,15 @@ public class DemoBingo {
                 System.out.println("Wrong Answer, please answer between " + min + " to " + max);
                 continue;  // skip this round re-answer
             }
-       if(userInput == bingo) {
-        System.out.println("BINGO!!!" + userNow + " Wins!!");
-        break; // end game
-       }    else if(userInput >bingo){
+       if(userInput >bingo){
             max = userInput-1;
-            System.out.println(" Between "+ min+ "to " + max);
-       }       else {
-            min = userInput+1;
-            System.out.println(" Between "+ min+ "to " + max);
+       }  else if (userInput <bingo ){
+            min = userInput+1;   
        } 
-       isUserA = !isUserA;
-      }
+
+       
+      }System.out.println("Bingo!!!the number is ");
+      
 
     
     
