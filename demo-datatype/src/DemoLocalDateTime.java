@@ -33,7 +33,8 @@ public class DemoLocalDateTime {
    // newYorkTime (ZonedDateTime) -> LocalDateTime
     ZoneId hongKong = ZoneId.of("Asia/Hong_Kong");
 
-    LocalDateTime hongKongLocalDateTime = newYorkZonedTime.withZoneSameInstant(hongKong).toLocalDateTime();
+    //LocalDateTime hongKongLocalDateTime = newYorkZonedTime
+    //.withZoneSameInstant(hongKong).toLocalDateTime();
     System.out.println(hongKongLocalDateTime); // 2026-01-01T12:59:59
 
 

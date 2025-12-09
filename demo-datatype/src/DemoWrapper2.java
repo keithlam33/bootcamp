@@ -5,6 +5,7 @@ public class DemoWrapper2 {
     Integer x2 = new Integer(3);
     Integer x3 = Integer.valueOf(3);
 
+   
     //double object
     Double d=3.5;
     Double d2 = new Double(3.5);
@@ -40,7 +41,28 @@ public class DemoWrapper2 {
     System.out.println(i5 == i6);// false 
     // new force to create new object
 
+    // String
+    // Pool: "abc"/ String.valueOf("abc")
+    // Heap: new String()
+    String s4= "abc";// store same string value once
+    String s5 = "abc";
+    System.out.println(s4.equals(s5));// true
+    System.out.println(s4 ==s5); // true
 
+    String s6 = new String("abc"); // heap momory
+    System.out.println(s4 == s6);// false
+
+    String s7 = String.valueOf("abc"); 
+    System.out.println(s4 == s7);// true
+
+    //s4.replace("bc", "xy");// write operation??
+    // string method isempty, charat, contains -> read
+    // replace 不是真正的write 因為佢會產生新的string而不是自己變
+    // print s4 still original bc
+    //xy replace bc 到新的string 只是沒儲存到任何address
+    // String s10 = ....... 存返入新的address
+    String s10 = s4.replace("bc", "xy");
+    // 好少特別額外用new string
 
 
 

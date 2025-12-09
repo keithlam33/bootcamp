@@ -156,6 +156,29 @@ public class DemoArray3 {
 
 
 
+  //which letter has the max count
+  char[] characters= new char[] {'a', 'z','z','z', 'd', 'z', 'u', 'i', 'a'};
+  //step 1 new int[26] count each letter
+  int[]counts   = new int[26];
+  for(int i=0; i<characters.length; i++ ){
+          counts[(characters[i]-'a')]++;
+  }
+  // step 2 find max
+  int maxCount = counts[0];
+  int targetp= 0;
+  for( int i=0; i<counts.length; i++){
+    if (counts[i] > maxCount) {
+        maxCount = counts[i];
+        targetp = i;
+        
+      }
+  }
+  System.out.println((char)(targetp+'a'));// (char)0+'a' = a
+
+  
+
+    
+
   }
 }
 

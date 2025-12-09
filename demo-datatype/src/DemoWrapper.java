@@ -52,7 +52,7 @@ public class DemoWrapper {
     // assign primitive into wrapper class
     int x10 = 10;
     Integer x20 = x10; 
-    x20.doubleValue();// ->10.0 
+    x20.doubleValue();// ->10.0  可以自己進行修改
     // Never use >, <, ==, <=, >= for Wrapper class 
     System.out.println(x20.equals(10)); // true
     System.out.println(x20.compareTo(10));// 0 
