@@ -163,6 +163,7 @@ public class DemoArray3 {
   for(int i=0; i<characters.length; i++ ){
           counts[(characters[i]-'a')]++;
   }
+  
   // step 2 find max
   int maxCount = counts[0];
   int targetp= 0;

@@ -35,7 +35,7 @@ public class DemoLocalDateTime {
 
     //LocalDateTime hongKongLocalDateTime = newYorkZonedTime
     //.withZoneSameInstant(hongKong).toLocalDateTime();
-    System.out.println(hongKongLocalDateTime); // 2026-01-01T12:59:59
+    // System.out.println(hongKongLocalDateTime); // 2026-01-01T12:59:59
 
 
     System.out.println(LocalDateTime.now());// current time
