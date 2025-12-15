@@ -154,6 +154,7 @@ public class DemoArray3 {
   char[] chs= staff.toCharArray();
   System.out.println(Arrays.toString(chs));// [J,o,h,n]
 
+  
 
 
   //which letter has the max count

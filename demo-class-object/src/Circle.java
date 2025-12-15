@@ -7,7 +7,7 @@ public class Circle {
   public Circle() {
 
   }
-  public Circle(double radius) {
+  public Circle(double radius) { // 生孩子，一出生就給玩具 建立有初始值的物件
     this.radius = radius;
   }
   //private double area; not raw data, repeat with radius, if radius changes, manually change area
@@ -39,7 +39,7 @@ public class Circle {
     System.out.println(c1.getRadius());
     System.out.println(c1.area()); // 38.48451000647496
 
-    Circle c2 = new Circle(3.9);
+    Circle c2 = new Circle(3.9);// 3.9 = setradius
     System.out.println(c2.getRadius());
     System.out.println(c2.area());
 

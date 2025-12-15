@@ -1,6 +1,20 @@
-public class practice {
-  public static void main(String[] args) {
-   
+import java.math.BigDecimal;
 
-  }
+public class practice {
+
+
+//Override
+
+@Override
+
+
+
+ 
+
+
+
+
+
+
+
 }

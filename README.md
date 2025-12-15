@@ -29,3 +29,12 @@
 - BigDecimal (setscale, roundingmode)
 - LocalDate
 - StringBuilder
+
+
+# Week 2
+-Library + Librarian + Book(class relationship)
+-Student + Teacher + Candy (receiveCandy()in Student)
+-Deck + Card+ Ranks + ShuffleHelper+ HandManager (static)
+- Customer + Order[] +Item[] (one to Many)
+- Method presentation ( circle.area(), person.bmi(), customer.isVip) 不是本身儲住的，而是即時計算
+- String1.java

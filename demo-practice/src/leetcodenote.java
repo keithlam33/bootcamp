@@ -66,6 +66,63 @@ public class leetcodenote {
                 count++;
             }
        }return count* 100/s.length() ; // 變int 自動round, 先* 100 因為if count/s.length 0.xxxx
+
+       // 551 Student attence record
+       boolean isRule1Passed= true;
+        int countA = 0;
+        int countL =0;
+        for(int i =0; i< s.length(); i++) {
+            if(s.charAt(i) !='L') {
+                countL=0; // reset countL 
+            }
+            if(s.charAt(i) == 'A' && ++countA >=2){ 
+                // left to right
+                // ='A' true then go to right
+                // 執行 ++countA先 
+                return false;
+            }
+            if(s.charAt(i)== 'L' && ++countL >=3) {
+                return false;
+            }
+        }
+        return true;
+
+        // 796 Rotate string
+        // StringBuilder method
+        if( s.length() != goal.length()) {
+                return false;
+        }
+        StringBuilder sb= new StringBuilder(s);
+        for( int i=0; i<s.length(); i++) {
+            sb.append(s.charAt(i));
+            sb.deleteCharAt(0);
+            if(sb.toString().equals(goal)){
+                return true;
+            }
+        }return false;
+
+        // s+s method 
+        
+        //1475 
+        public int[] finalPrices(int[] prices) {
+        
+        for(int i=0; i<prices.length-1; i++ ) {
+            prices[i]-= Solution.calculateDiscount(prices, i);
+            }
+        return prices;
+        }
+
+            public static int calculateDiscount (int[] prices, int currentIdx) {
+            for(int j =currentIdx+1 ; j<prices.length; j++) {
+                    if(prices[currentIdx] >=prices[j]) {
+                        return prices[j];
+                    }
+            }
+            return 0;
+            }
+            }
+
+        
         
 
 
