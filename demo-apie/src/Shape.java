@@ -20,6 +20,7 @@ public abstract class Shape {
     // Objects.equals (xx,yy) 自動 ==/ equals
     //java 8
   }
+  
   @Override
   public String toString() {
     return "color=" + this.color+ ")";
@@ -28,6 +29,7 @@ public abstract class Shape {
   public int hashCode() {
     return Objects.hash(this.color);
   }
+  
 
   // abstract method (without implemention)
   // child class MUST implement all abstract method

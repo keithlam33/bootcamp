@@ -50,6 +50,7 @@ public class DemoString {
     // 5. isEmpty
     // Empty String is a String value("")
     String emptyString = "";
+    System.out.println(emptyString.isEmpty());// true
     System.out.println(s.isEmpty());// false, goodbye not empty
 
     String spaceString = " ";

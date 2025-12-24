@@ -22,9 +22,9 @@ public boolean equals(Object o) {
   if(this==o) return true;
   if(!(o instanceof Rectangular)) return false;
   Rectangular rectangular = (Rectangular)o;
-  return rectangular.getLength() == this.length &&
-        rectangular.getWidth() == this.width && 
-       rectangular.getColor().equals(super.getColor());
+  return Objects.equals(this.length, rectangular.getLength())
+    && Objects.equals(this.width, rectangular.getWidth())
+    && Objects.equals(super.getColor(), rectangular.getColor());
 }
 @Override
 public int hashCode() {
@@ -50,7 +50,7 @@ public static void main(String[] args) {
   System.out.println(r1.area());
   System.out.println(r2.equals(r3));
   System.out.println(r4.hashCode() == r1.hashCode());
-  System.out.println(r1);
+  System.out.println(r1);// call toString()
   System.out.println(r3);
 }
 

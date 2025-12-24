@@ -124,12 +124,12 @@ public class DemoLoop2 {
   String s1 = "abc5uk20fs";
   String s2 = "";
 
-  for(int i=0; i<s1.length(); i++) {
-     if (s1.charAt(i)>= '0' && s1.charAt(i)<= '9')// ' '
-      {
-        s2 += s1.charAt(i);
-      }
-  }System.out.println(s2);
+  // for(int i=0; i<s1.length(); i++) {
+  //    if (s1.charAt(i)>= '0' && s1.charAt(i)<= '9')
+  //     {
+  //       s2 += s1.charAt(i);
+  //     }
+  // }System.out.println(s2);
 
   //encrypt password, "abcd" -> algorithm: ascii +3 -> "defg"
   // 'a' + 3 = char +int = int
@@ -156,13 +156,11 @@ public class DemoLoop2 {
      }
 
      //continue -> skip the rest
-     // same as else, but when there are 10000 lines, else is hard to read
+     // same as else, but when there are 10000 lines, else is hard to
      for( int i=0; i<20; i++) {
       if (i%2 ==0) {
         System.out.println("hello");
         continue;// goes to modifier (i++)
-        // 提早離開
-        // break 多啲用
       }
       System.out.println("goodbye");
      }
@@ -187,14 +185,6 @@ public class DemoLoop2 {
       largestNum +=7; //不然就一直加7
      }
      System.out.println(largestNum);
-     // for vs while
-     // 如果決定到loop 行幾多次 -> for loop 
-     // 如string length 
-     //int o=0;  while (0<10){sysout"hello; o++} = for loop, but flexible on modifier 0++
-     // for(xxx){ normally we dont use additional modifier (i++) in for loop content}
-     // 習慣兩種都用depends on 情況
-
-
 
      // 
      String currentTime = "23:42:00";
@@ -249,16 +239,12 @@ public class DemoLoop2 {
           System.out.println("Not Found");
         }
 
-        int i13 = -1;
-        for(int i =0; i <s10.length(); i++ ) {
-            if(s10.charAt(i) == 'X') {
-                i13 = i;
-                break;
-            }
-        }System.out.println(i13);
+        // prime numbers between 1-50
+        int i11 =2;
+        int i12 =2;
+         // i11<i12, i12%i11 ==0, i12 <=50
 
-       
-
+        // check if n10 is the prime
         
 
         // for(i for(j ) )i and j refers to 2 different things
@@ -269,30 +255,11 @@ public class DemoLoop2 {
           }
         }
         int k=4;
-        for(int i=0; i<k; i++){// row 
-          for(int j=0; j<i+1; j++) { // print star 
+        for(int i=0; i<3; i++){// row 
+          for(int j=0; j<k; j++) { // print star 
             
-            System.out.print("*");
           }
-          System.out.println();//next row
         }
-        
-        //   *
-        //  ***
-        // *****
-        
-    int k10 =4;
-    
-    for(int i =0; i <k10; i++) {// next row
-      for(int l =0; l <k10-i; l++){
-          System.out.print(" ");
-      }
-      for(int j=0; j<2*i-1; j++){ // print *
-          
-          System.out.print("*");
-      
-        }System.out.println();
-    }
           
         
         

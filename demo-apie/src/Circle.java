@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Circle extends Shape{
+public class Circle extends Shape{// final class means cannot be extend 不會再有circle's child class
   private double radius;
 
 

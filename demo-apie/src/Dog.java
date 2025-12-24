@@ -10,7 +10,7 @@ public class Dog extends Animal {
     super(name, age);// calling another parent constructor
   }
   public Dog() { 
-// super(); //不寫＝寫左 calling parent empty constructor
+ // super(); //不寫＝寫左 calling parent empty constructor
 
   }
   // implicityly inherit parent's all instance method

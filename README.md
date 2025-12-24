@@ -38,3 +38,24 @@
 - Customer + Order[] +Item[] (one to Many)
 - Method presentation ( circle.area(), person.bmi(), customer.isVip) 不是本身儲住的，而是即時計算
 - String1.java
+
+# Week 3
+   - APIE
+      - Inheritance (extends, abstract class/ class)
+        - Object.class (equals, hashCode, toString)
+        - Superman extends Human
+      - Interface (implements -> contract 技能的承諾/描述)
+        - class can implement many interface, but one parent class
+      - Polymorphism (Inheritance + Interface)
+        - Hero, Warrior, Archer (static Polymorphism compile time 睇object reference type , dynamic polymorphism runtime 睇object type)
+        -hero.attack(target) -> polymorphism 同一動作 不同角色 有自己方式attack
+      - Encapsulation 封裝技巧 -> private + public , 點present 件事, read and write, setter, getter
+   - Static + Final
+      - variable/ method 使用方式 
+
+   - enum
+      - Direction (with attribute, isOpposite), color
+      - Revise code exmaple (rank, card)
+      - BigTwoRule/ PokerRule implements GameRule
+      - INSTANCE
+      - Ball + Color
